@@ -1,0 +1,148 @@
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<style>
+	#screen {
+		background-color: black;
+		color: white;
+		font-family: monospace;
+	}
+	#code {
+		font-family: monospace;
+	}
+	td {
+		border: 1px solid black;
+		min-height: 20px;
+		min-width:10px;
+		padding: 3px;
+		font-family: monospace;
+		text-align: center;
+	}
+	th {
+		min-height: 20px;
+		min-width:20px;
+	}
+</style>
+<body>
+    <textarea readonly cols="80" rows="25" id="screen"></textarea>
+    <!--<table style="float:right;">
+    	<tr><th>0000-000f</th><a </tr>
+    </table>-->
+
+    <br/>
+    <textarea cols="40" rows="5" id="code"></textarea>
+    <br/>
+    <input type="button" value="Run" id="run"/>
+    <input type="button" value="Reset" id="reset"/>
+    <div style="position:relative;">
+    <table style="float:left;">
+        <tr>
+            <th>AX</th>
+            	<td id="ax">0x0000</td>
+            <th>AH</th>
+            	<td id="ah">0x00</td>
+            <th>AL</th>
+            	<td id="al">0x00</td>
+           	<th>SI</th>
+           		<td id="si">0x0000</td>
+           	<th>CS</th>
+           		<td id="cs">0x0000</td>
+           	<th>IP</th>
+           		<td id="ip">0x0000</td>
+        </tr>
+        <tr>
+            <th>BX</th>
+            	<td id="bx">0x0000</td>
+            <th>BH</th>
+            	<td id="bh">0x00</td>
+            <th>BL</th>
+            	<td id="bl">0x00</td>
+            <th>DI</th>
+           		<td id="di">0x0000</td>
+           	<th>DS</th>
+           		<td id="ds">0x0000</td>
+        </tr>
+        <tr>
+            <th>CX</th>
+            	<td id="cx">0x0000</td>
+            <th>CH</th>
+            	<td id="ch">0x00</td>
+            <th>CL</th>
+            	<td id="cl">0x00</td>
+            <th>BP</th>
+           		<td id="bp">0x0000</td>
+           	<th>ES</th>
+           		<td id="es">0x0000</td>
+        </tr>
+        <tr>
+            <th>DX</th>
+            	<td id="dx">0x0000</td>
+            <th>DH</th>
+            	<td id="dh">0x00</td>
+            <th>DL</th>
+            	<td id="dl">0x00</td>
+            <th>SP</th>
+           		<td id="sp">0x0000</td>
+           	<th>SS</th>
+           		<td id="ss">0x0000</td>
+        </tr>
+    </table>
+    <table style="float:left;">
+    	<tr>
+    		<th>15</th>
+    		<th>14</th>
+    		<th>13</th>
+    		<th>12</th>
+    		<th>11</th>
+    		<th>10</th>
+    		<th>9</th>
+    		<th>8</th>
+    		<th>7</th>
+    		<th>6</th>
+    		<th>5</th>
+    		<th>4</th>
+    		<th>3</th>
+    		<th>2</th>
+    		<th>1</th>
+    		<th>0</th>
+    	</tr>
+    	<tr>
+    		<th>-</th>
+    		<th>-</th>
+    		<th>-</th>
+    		<th>-</th>
+    		<th>O</th>
+    		<th>D</th>
+    		<th>I</th>
+    		<th>T</th>
+    		<th>S</th>
+    		<th>Z</th>
+    		<th>-</th>
+    		<th>A</th>
+    		<th>-</th>
+    		<th>P</th>
+    		<th>-</th>
+    		<th>C</th>
+    	</tr>
+    	<tr>
+    		<td id="">0</td>
+    		<td id="">0</td>
+    		<td id="">0</td>
+    		<td id="">0</td>
+    		<td id="O">0</td>
+    		<td id="D">0</td>
+    		<td id="I">0</td>
+    		<td id="T">0</td>
+    		<td id="S">0</td>
+    		<td id="Z">0</td>
+    		<td id="">0</td>
+    		<td id="A">0</td>
+    		<td id="">0</td>
+    		<td id="P">0</td>
+    		<td id="">0</td>
+    		<td id="C">0</td>
+    	</tr>
+    </table>
+	</div>
+</body>
+
+
