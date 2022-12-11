@@ -42,7 +42,7 @@ function pad(number, length) {
     while (str.length < length) {
         str = '0' + str;
     }
-   
+
     return str;
 }
 
